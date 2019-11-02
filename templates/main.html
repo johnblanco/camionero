@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Costos de carga</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <h1 class="navbar-brand mb-0 h1">Cálculo de costos</h1>
+</nav>
+<div class="container">
+    <form method="post" action="/">
+
+        <div class="form-group">
+            <label for="km">Recorrido del viaje en Km (ida)</label>
+            <input type="number" class="form-control" id="km"
+                   placeholder="ingrese km del viaje">
+        </div>
+        <div class="form-group">
+            <label for="peajes">Cantidad de peajes (ida)</label>
+            <input type="number" class="form-control" id="peajes"
+                   placeholder="ingrese cantidad de peajes">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Hay cruce de frontera?</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                       value="option1">
+                <label class="form-check-label" for="inlineRadio1">Si</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                       value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="tons">Toneladas transportadas (ida)</label>
+            <input type="number" class="form-control" id="tons"
+                   placeholder="ingrese cantidad de toneladas">
+        </div>
+
+        <div class="form-group">
+            <label for="tons">Tiempo total de traslado en el viaje (ida) [horas]</label>
+            <input type="number" class="form-control" id="tons"
+                   placeholder="ingrese cantidad de toneladas">
+        </div>
+
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto start">
+                <input type="submit" value="Calcular" class="btn btn-primary btn-lg">
+            </div>
+        </div>
+
+    </form>
+
+
+</div>
+<footer class="footer">
+    <div class="github">
+        <span class="text-muted">
+            
+        </span>
+    </div>
+</footer>
+
+</body>
+</html>
