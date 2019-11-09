@@ -1,0 +1,10 @@
+{% macro render_radios(field) %}
+    {{ field.label }}
+    {% for subfield in field %}
+    <div class="form-check form-check-inline">
+        {{ subfield(class='form-check-input') }}
+        {{ subfield.label(class='form-check-label') }}
+    </div>
+    {% endfor %}
+<br/>
+{% endmacro %}
